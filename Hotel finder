@@ -1,0 +1,13 @@
+window.onload = () => {
+    document.getElementById('output').innerHTML = 'Hello, I am ServantAi. How can I assist you today?';
+
+    document.getElementById('send').onclick = () => {
+        const userInput = document.getElementById('user-input').value;
+        // Here you would add the logic to process the user's input and respond accordingly
+        // This could involve calling a back-end service that handles the chat logic
+        console.log(userInput); // Placeholder for user input processing
+        // Display a mock response for demonstration purposes
+        document.getElementById('output').innerHTML += `<p>User: ${userInput}</p>`;
+        document.getElementById('output').innerHTML += `<p>ServantAi: This is where a response would go.</p>`;
+    };
+};
